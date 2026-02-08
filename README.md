@@ -2,6 +2,10 @@
 
 Command-line audio processor written in Rust to apply various noise effects to WAV audio files.
 
+> Please note that this project is currently in early development and various improvements
+> and optimizations will be added as I go through the Rust book. The current implementation
+> is a proof of concept to demonstrate the core functionality.
+
 ## Features
 
 Racket applies a chain of audio effects to transform your audio:
@@ -30,7 +34,12 @@ cargo build --release
 # The binary will be available at ./target/debug/racket or ./target/release/racket
 ```
 
+### Pre-built Binaries
+Pre-built binaries for common platforms will be available in the
+[Releases](https://github.com/fadelights/racket/releases) section.
+
 ## Optional Dependencies
+
 - To handle `mp3` files, you need to have `ffmpeg` installed on your system.
 - To process files in parallel, you need to have `GNU parallel` installed.
 
